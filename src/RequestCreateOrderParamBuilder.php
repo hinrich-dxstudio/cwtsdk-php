@@ -47,8 +47,8 @@ class RequestCreateOrderParamBuilder extends ParamBuilder
      * @param float $cash
      * @return RequestCreateOrderParamBuilder
      */
-    public function setCash( float $cash ): RequestCreateOrderParamBuilder{
-        $this->params['cash'] = $cash;
+    public function setAmount( float $amount ): RequestCreateOrderParamBuilder{
+        $this->params['cash'] = $amount;
         return $this;
     }
 
