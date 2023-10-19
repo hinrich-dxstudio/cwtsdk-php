@@ -44,7 +44,7 @@ class RequestCreateOrderParamBuilder extends ParamBuilder
 
     /**
      * 设置金额
-     * @param float $cash
+     * @param float $amount
      * @return RequestCreateOrderParamBuilder
      */
     public function setAmount( float $amount ): RequestCreateOrderParamBuilder{

@@ -12,7 +12,7 @@ try {
     //构建订单参数
     $createOrderParam = \Dxstudio\CwtSDK\RequestCreateOrderParamBuilder::builder()
         ->setLocalOrderId('1111122222444444')
-        ->setCash(11.11)
+        ->setAmount(11.11)
         ->setNotifyUrl('http://192.168.222.187/callback.php')
         ->setWaitTime(10000)
         ->setAutoConfirm(true)
