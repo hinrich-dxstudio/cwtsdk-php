@@ -9,7 +9,7 @@ class RequestQueryOrderOneParamBuilder extends ParamBuilder
         'serial' => ''
     ];
 
-    static public function builder(): RequestQueryOrderOneParamBuilder
+    static public function getNew(): RequestQueryOrderOneParamBuilder
     {
         // TODO: Implement builder() method.
         return new RequestQueryOrderOneParamBuilder();

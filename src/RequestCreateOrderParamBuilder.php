@@ -25,7 +25,7 @@ class RequestCreateOrderParamBuilder extends ParamBuilder
     /**
      * @return RequestCreateOrderParamBuilder
      */
-    static public function builder(): RequestCreateOrderParamBuilder{
+    static public function getNew(): RequestCreateOrderParamBuilder{
 
         return new RequestCreateOrderParamBuilder();
 

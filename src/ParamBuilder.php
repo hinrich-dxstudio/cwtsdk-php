@@ -6,7 +6,7 @@ abstract class ParamBuilder
 
     protected $params = [];
 
-    abstract static public function builder();
+    abstract static public function getNew();
 
     public function getParams(){
 

@@ -10,7 +10,7 @@ try {
 
     $sdk = new Dxstudio\CwtSDK\MerchantSDK( $config['gateway'], $config['key'], $config['secret'] );
     //构建订单参数
-    $createOrderParam = \Dxstudio\CwtSDK\RequestCreateOrderParamBuilder::builder()
+    $createOrderParam = \Dxstudio\CwtSDK\RequestCreateOrderParamBuilder::getNew()
         ->setLocalOrderId('1111122222444444')
         ->setAmount(11.11)
         ->setNotifyUrl('http://192.168.222.187/callback.php')

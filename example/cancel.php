@@ -10,7 +10,7 @@ $config = include __DIR__.'/config.php';
 try {
 
     $sdk = new Dxstudio\CwtSDK\MerchantSDK( $config['gateway'], $config['key'], $config['secret'] );
-    $cancelParam = \Dxstudio\CwtSDK\RequestCancelOrderParamBuilder::builder()
+    $cancelParam = \Dxstudio\CwtSDK\RequestCancelOrderParamBuilder::getNew()
         ->setOrderId( 'G18B3ECF8BA20027A9IRY' );
 
     $r = $sdk->cancelOrder( $cancelParam );

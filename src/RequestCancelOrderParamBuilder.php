@@ -9,7 +9,7 @@ class RequestCancelOrderParamBuilder extends ParamBuilder
       'serial' => ''
     ];
 
-    static public function builder():RequestCancelOrderParamBuilder
+    static public function getNew():RequestCancelOrderParamBuilder
     {
         // TODO: Implement builder() method.
         return new RequestCancelOrderParamBuilder();

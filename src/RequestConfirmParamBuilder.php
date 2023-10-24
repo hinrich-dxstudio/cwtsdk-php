@@ -8,7 +8,7 @@ class RequestConfirmParamBuilder extends \Dxstudio\CwtSDK\ParamBuilder
         'sonSerial' => '',
     ];
 
-    static public function builder():RequestConfirmParamBuilder
+    static public function getNew():RequestConfirmParamBuilder
     {
         // TODO: Implement builder() method.
         return new RequestConfirmParamBuilder();

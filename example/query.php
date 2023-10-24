@@ -9,7 +9,7 @@ $config = include __DIR__.'/config.php';
 try {
 
     $sdk = new Dxstudio\CwtSDK\MerchantSDK( $config['gateway'], $config['key'], $config['secret'] );
-    $queryParam = \Dxstudio\CwtSDK\RequestQueryOrderOneParamBuilder::builder()
+    $queryParam = \Dxstudio\CwtSDK\RequestQueryOrderOneParamBuilder::getNew()
         ->setOrderId( 'G18B3ECF8BA20027A9IRY' );
 
 
